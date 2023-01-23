@@ -3,6 +3,10 @@ import ReactEcharts from "echarts-for-react";
 import options from './chartOptions';
 import Card from './components/UI/Card';
 
+const clickHandler = () => {
+
+}
+
 function App() {
   return (
     <div className={styles.page}>
@@ -14,6 +18,10 @@ function App() {
           ></ReactEcharts>
         </Card>
       )}
+      <div className={styles.buttonContainer}>
+        <button onClick={clickHandler}>Page 1</button>
+        <button onClick={clickHandler}>Page 2</button>
+      </div>
     </div>
   )
 }
