@@ -80,6 +80,109 @@ const options = [
         tooltip: {
             trigger: "axis"
         }
+    },
+    {
+        xAxis: {
+            data: ['A', 'B', 'C', 'D', 'E']
+        },
+        yAxis: {},
+        series: [
+            {
+                data: [10, 22, 28, 23, 19],
+                type: 'line',
+                smooth: true
+            }
+        ],
+        tooltip: {
+            trigger: "axis"
+        }
+    },
+    {
+        xAxis: {
+            data: ['A', 'B', 'C', 'D', 'E']
+        },
+        yAxis: {},
+        series: [
+            {
+                data: [10, 22, 28, 43, 49],
+                type: 'line',
+                stack: 'x',
+                areaStyle: {}
+            },
+            {
+                data: [5, 4, 3, 5, 10],
+                type: 'line',
+                stack: 'x',
+                areaStyle: {}
+            }
+        ],
+        tooltip: {
+            trigger: "axis"
+        }
+    },
+    {
+        xAxis: {
+            data: ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat']
+        },
+        yAxis: {},
+        series: [
+            {
+                type: 'scatter',
+                data: [220, 182, 191, 234, 290, 330, 310]
+            }
+        ],
+        tooltip: {
+            trigger: "axis"
+        }
+    },
+    {
+        series: [
+            {
+                type: 'pie',
+                data: [
+                    {
+                        value: 335,
+                        name: 'Direct Visit'
+                    },
+                    {
+                        value: 234,
+                        name: 'Union Ad'
+                    },
+                    {
+                        value: 1548,
+                        name: 'Search Engine'
+                    }
+                ]
+            }
+        ],
+        tooltip: {
+            trigger: "item"
+        }
+    },
+    {
+        series: [
+            {
+                type: 'pie',
+                data: [
+                    {
+                        value: 335,
+                        name: 'A'
+                    },
+                    {
+                        value: 234,
+                        name: 'B'
+                    },
+                    {
+                        value: 1548,
+                        name: 'C'
+                    }
+                ],
+                radius: ['40%', '70%']
+            }
+        ],
+        tooltip: {
+            trigger: "item"
+        }
     }
 ]
 
