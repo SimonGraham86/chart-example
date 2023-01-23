@@ -17,9 +17,12 @@ const options = [
         ],
         tooltip: {
             trigger: "axis"
-        }
+        },
+        color: [
+            '#002C77'
+        ]
     },
-    {
+    {   
         series: [
             {
                 type: 'pie',
@@ -59,10 +62,20 @@ const options = [
         tooltip: {
             trigger: "item"
         },
+        color: [
+            '#002C77',
+            '#009DE0',
+            '#0077A0',
+            '#00968F',
+            '#76D3FF',
+            '#00AC41',
+            '#EE3D8B'
+        ]
     },
     {
+        grid: { top: 20, right: 40, bottom: 20, left: 40 },
         xAxis: {
-            data: ['', 'B', 'C', 'D', 'E']
+            data: ['A', 'B', 'C', 'D', 'E']
         },
         yAxis: {},
         series: [
@@ -79,9 +92,14 @@ const options = [
         ],
         tooltip: {
             trigger: "axis"
-        }
+        },
+        color: [
+            '#002C77',
+            '#009DE0'
+        ]
     },
     {
+        grid: { top: 20, right: 40, bottom: 20, left: 40 },
         xAxis: {
             data: ['A', 'B', 'C', 'D', 'E']
         },
@@ -95,9 +113,13 @@ const options = [
         ],
         tooltip: {
             trigger: "axis"
-        }
+        },
+        color: [
+            '#002C77'
+        ]
     },
     {
+        grid: { top: 20, right: 40, bottom: 20, left: 40 },
         xAxis: {
             data: ['A', 'B', 'C', 'D', 'E']
         },
@@ -118,9 +140,14 @@ const options = [
         ],
         tooltip: {
             trigger: "axis"
-        }
+        },
+        color: [
+            '#002C77',
+            '#009DE0'
+        ]
     },
     {
+        grid: { top: 20, right: 40, bottom: 20, left: 40 },
         xAxis: {
             data: ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat']
         },
@@ -133,7 +160,10 @@ const options = [
         ],
         tooltip: {
             trigger: "axis"
-        }
+        },
+        color: [
+            '#002C77'
+        ]
     },
     {
         series: [
@@ -157,7 +187,12 @@ const options = [
         ],
         tooltip: {
             trigger: "item"
-        }
+        },
+        color: [
+            '#002C77',
+            '#009DE0',
+            '#0077A0'
+        ]
     },
     {
         series: [
@@ -182,7 +217,12 @@ const options = [
         ],
         tooltip: {
             trigger: "item"
-        }
+        },
+        color: [
+            '#002C77',
+            '#009DE0',
+            '#0077A0'
+        ]
     }
 ]
 
