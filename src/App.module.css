@@ -6,5 +6,6 @@
 }
 
 .selected button {
-    color:green;
+    color:white;
+    background-color: blueviolet;
 }
