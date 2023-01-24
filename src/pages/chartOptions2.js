@@ -1,52 +1,42 @@
 const options = [
     {
+        tooltip: {
+            trigger: 'item'
+        },
+        legend: {
+            top: 'center',
+            left: 0,
+            orient: 'vertical'
+        },
         series: [
             {
+                name: 'Access From',
                 type: 'pie',
+                radius: ['30%', '70%'],
+                roseType: 'angle',
+                itemStyle: {
+                    borderRadius: [20, 5, 5, 10],
+                    borderColor: '#fff',
+                    borderWidth: 2
+                },
+                label: {
+                    show: false
+                },
                 data: [
-                    {
-                        value: 400,
-                        name: 'Monday'
-                    },
-                    {
-                        value: 300,
-                        name: 'Tuesday'
-                    },
-                    {
-                        value: 350,
-                        name: 'Wednesday'
-                    },
-                    {
-                        value: 200,
-                        name: 'Thursday'
-                    },
-                    {
-                        value: 280,
-                        name: 'Friday'
-                    },
-                    {
-                        value: 625,
-                        name: 'Saturday'
-                    },
-                    {
-                        value: 410,
-                        name: 'Sunday'
-                    }
-                ],
-                roseType: 'area'
+                    { value: 800, name: 'Search Engine' },
+                    { value: 735, name: 'Direct' },
+                    { value: 580, name: 'Email' },
+                    { value: 484, name: 'Union Ads' },
+                    { value: 400, name: 'Video Ads' }
+                ]
             }
         ],
-        tooltip: {
-            trigger: "item"
-        },
         color: [
             '#002C77',
             '#009DE0',
             '#0077A0',
             '#00968F',
-            '#76D3FF',
-            '#00AC41',
-            '#EE3D8B'
+            '#76D3FF'
         ]
     },
     {
@@ -124,43 +114,53 @@ const options = [
         ]
     },
     {
-        tooltip: {
-            trigger: 'item'
-        },
-        legend: {
-            top: 'center',
-            left: 0,
-            orient: 'vertical'
-        },
         series: [
             {
-                name: 'Access From',
                 type: 'pie',
-                radius: ['30%', '70%'],
-                roseType: 'angle',
-                itemStyle: {
-                    borderRadius: [20, 5, 5, 10],
-                    borderColor: '#fff',
-                    borderWidth: 2
-                },
-                label: {
-                    show: false
-                },
                 data: [
-                    { value: 800, name: 'Search Engine' },
-                    { value: 735, name: 'Direct' },
-                    { value: 580, name: 'Email' },
-                    { value: 484, name: 'Union Ads' },
-                    { value: 400, name: 'Video Ads' }
-                ]
+                    {
+                        value: 400,
+                        name: 'Monday'
+                    },
+                    {
+                        value: 300,
+                        name: 'Tuesday'
+                    },
+                    {
+                        value: 350,
+                        name: 'Wednesday'
+                    },
+                    {
+                        value: 200,
+                        name: 'Thursday'
+                    },
+                    {
+                        value: 280,
+                        name: 'Friday'
+                    },
+                    {
+                        value: 625,
+                        name: 'Saturday'
+                    },
+                    {
+                        value: 410,
+                        name: 'Sunday'
+                    }
+                ],
+                roseType: 'area'
             }
         ],
+        tooltip: {
+            trigger: "item"
+        },
         color: [
             '#002C77',
             '#009DE0',
             '#0077A0',
             '#00968F',
-            '#76D3FF'
+            '#76D3FF',
+            '#00AC41',
+            '#EE3D8B'
         ]
     }
 ]
