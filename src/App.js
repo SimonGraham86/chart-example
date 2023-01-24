@@ -1,26 +1,22 @@
 import styles from './App.module.css';
-import ReactEcharts from "echarts-for-react";
-import options from './chartOptions';
-import Card from './components/UI/Card';
-
-const clickHandler = () => {
-
-}
+import { Route, Routes, NavLink } from 'react-router-dom';
+import Page1 from './pages/Page1';
+import Page2 from './pages/Page2';
 
 function App() {
   return (
-    <div className={styles.page}>
-      {options.map((option) => 
-        <Card className={styles.container}>  
-          <ReactEcharts
-            option={option}
-            style={{ width: "100%", height: "100%" }}
-          ></ReactEcharts>
-        </Card>
-      )}
+    <div>
+      <Routes>
+        <Route path="/" element={<Page1 />} />
+        <Route path="/Page-2/" element={<Page2 />} />
+      </Routes>
       <div className={styles.buttonContainer}>
-        <button onClick={clickHandler}>Page 1</button>
-        <button onClick={clickHandler}>Page 2</button>
+        <NavLink className={(navData) => navData.isActive ? styles.selected : ''} to="/">
+          <button>Page 1</button>
+        </NavLink>
+        <NavLink className={(navData) => navData.isActive ? styles.selected : ''} to="/Page-2/">
+          <button>Page 2</button>
+        </NavLink>
       </div>
     </div>
   )

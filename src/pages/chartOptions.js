@@ -22,7 +22,7 @@ const options = [
             '#002C77'
         ]
     },
-    {   
+    {
         series: [
             {
                 type: 'pie',
@@ -222,6 +222,46 @@ const options = [
             '#002C77',
             '#009DE0',
             '#0077A0'
+        ]
+    },
+    {
+        tooltip: {
+            trigger: 'item'
+        },
+        legend: {
+            top: 'center',
+            left: 0,
+            orient: 'vertical'
+        },
+        series: [
+            {
+                name: 'Access From',
+                type: 'pie',
+                radius: ['30%', '70%'],
+                roseType: 'angle',
+                itemStyle: {
+                    borderRadius: [20, 5, 5, 10],
+                    borderColor: '#fff',
+                    borderWidth: 2
+                },
+                label: {
+                    show: false
+                },
+                data: [
+                    { value: 800, name: 'Search Engine' },
+                    { value: 735, name: 'Direct' },
+                    { value: 580, name: 'Email' },
+                    { value: 484, name: 'Union Ads' },
+                    { value: 400, name: 'Video Ads' }
+                ]
+            }
+        ],
+        color: [
+            '#002C77',
+            '#009DE0',
+            '#0077A0',
+            '#00968F',
+            '#76D3FF'
         ]
     }
 ]
